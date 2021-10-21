@@ -16,9 +16,9 @@ using namespace std;
 void p151021z4() {
     int n;
     cin>>n;
-    int *a=new int[n];
+    int *a=new char[n];
     for (int i=0; i<n; i++) {
-        a[n]=i;
+        a[n]='a';
     }
     for (int i=0; i<n; i++) {
         cout<<"ячейка "<<i<<" где-то здесь "<<&a[i]<<endl;
