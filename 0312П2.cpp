@@ -24,7 +24,7 @@ int hashCode(string str) {
     for (int i = 0; i < str.length(); i++) {
         k += str[i];
     }
-    return k%3;
+    return k%1000;
 }
 void add(Chain *a, string str, int val) {
     int hash = hashCode(str);
@@ -47,13 +47,13 @@ void remove(Chain *a, string str) {
 }
 int size(Chain *a) {
     int k = 0;
-    for (int i=0; i<3; i++) {
+    for (int i=0; i<1000; i++) {
         k+=a[i].chain.size();
     }
     return k;
 }
 int main() {
-    Chain *a = new Chain[3];
+    Chain *a = new Chain[1000];
     int n;
     cin>>n;
     for (int i=0; i<n; i++) {
